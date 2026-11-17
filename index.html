@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="ml"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ബഹജത്തുൽ അറബിയ</title>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Anek+Malayalam:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--arf:'Sakkal Majalla','Majalla','Amiri','Noto Naskh Arabic',serif;--bg1:#e6f7f2;--bg2:#d9ecff;--ink:#12353a;--card:#fff;--soft:#eef7f6;--teal:#0e8f86;--sun:#ffc43d;--coral:#ff6a55;--violet:#7a5cff;--sky:#2c9cff;--green:#2fae62;--orange:#f29b00;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg1:#0f2a2e;--bg2:#14223f;--ink:#e8f6f4;--card:#1b3a40;--soft:#16323a}}
+:root[data-theme="dark"]{--bg1:#0f2a2e;--bg2:#14223f;--ink:#e8f6f4;--card:#1b3a40;--soft:#16323a}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;font-family:'Anek Malayalam','Noto Sans Malayalam',system-ui,sans-serif;color:var(--ink);background:var(--bg1);background:linear-gradient(160deg,var(--bg1),var(--bg2)) fixed;min-height:100vh}
+.ar{font-family:var(--arf);direction:rtl}
+header{display:flex;align-items:center;gap:10px;padding:10px 14px;background:var(--teal);color:#fff;position:sticky;top:env(safe-area-inset-top,0px);z-index:5;box-shadow:0 4px 0 rgba(0,0,0,.18)}
+header h1{margin:0;font-size:1.25rem;flex:1;line-height:1.1}
+header h1 small{display:block;font-size:.8rem;font-weight:500;opacity:.9}
+.stars{background:var(--sun);color:#5a3b00;border-radius:20px;padding:3px 12px;font-weight:800}
+main{max-width:860px;margin:0 auto;padding:14px 14px 40px}
+h2{margin:6px 0 12px;font-size:1.5rem}
+.btn{border:0;border-radius:18px;padding:9px 18px;font:inherit;font-weight:700;color:#fff;background:var(--teal);box-shadow:0 5px 0 rgba(0,0,0,.22);cursor:pointer;transition:transform .1s}
+.btn:active{transform:translateY(4px);box-shadow:0 1px 0 rgba(0,0,0,.22)}
+.btn:focus-visible,.tile:focus-visible,.lt:focus-visible,.tab:focus-visible{outline:4px solid var(--sun);outline-offset:2px}
+.btn.c{background:var(--coral)}.btn.v{background:var(--violet)}.btn.s{background:var(--sky)}.btn.g{background:var(--green)}
+.hero{text-align:center;padding:10px 0 4px}
+.hero .big{font-size:5rem;line-height:1.1;color:var(--teal);display:inline-block;animation:bob 3s ease-in-out infinite}
+.hero p{margin:0;font-size:1.1rem}
+@keyframes bob{50%{transform:translateY(-8px) rotate(-2deg)}}
+.menu{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:16px;margin-top:14px}
+.tile{border:0;border-radius:26px;padding:18px 10px 14px;background:var(--c);color:#fff;font:inherit;cursor:pointer;box-shadow:0 8px 0 rgba(0,0,0,.25);transition:transform .12s;text-align:center}
+.tile:hover{transform:translateY(-3px) rotate(-1deg)}.tile:active{transform:translateY(6px);box-shadow:0 2px 0 rgba(0,0,0,.25)}
+.tile i{font-style:normal;font-size:3rem;display:block;filter:drop-shadow(0 4px 0 rgba(0,0,0,.2))}
+.tile b{font-size:1.2rem;display:block}.tile span{font-size:.85rem;opacity:.92}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(64px,1fr));gap:10px}
+.lt{border:0;border-radius:18px;height:72px;font:700 2.8rem var(--arf);background:var(--card);color:var(--c);box-shadow:0 5px 0 var(--c);cursor:pointer;direction:rtl}
+.lt:active{transform:translateY(4px);box-shadow:0 1px 0 var(--c)}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+.tab{border:0;border-radius:16px;padding:7px 14px;font:inherit;font-weight:700;background:var(--card);color:var(--ink);box-shadow:0 4px 0 rgba(0,0,0,.15);cursor:pointer}
+.tab.on{background:var(--violet);color:#fff}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:14px}
+.card{background:var(--card);border-radius:22px;padding:12px;text-align:center;box-shadow:0 6px 0 rgba(0,0,0,.14);cursor:pointer;border:0;font:inherit;color:var(--ink)}
+.card:active{transform:scale(.96)}
+.card .e{font-size:3.4rem;line-height:1.2}.card .a{font-size:2.2rem;line-height:1.3;color:var(--teal)}
+.card .m{font-weight:700}.card .t{font-size:.85rem;opacity:.7}
+.modal{position:fixed;inset:0;background:rgba(10,30,35,.6);display:flex;align-items:center;justify-content:center;padding:14px;z-index:20}
+.panel{background:var(--card);border-radius:28px;padding:18px;max-width:430px;width:100%;max-height:92vh;overflow:auto;text-align:center;animation:pop .3s}
+@keyframes pop{from{transform:scale(.7);opacity:0}}
+.panel .huge{font-size:7rem;line-height:1.2;color:var(--c)}
+.forms{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:8px 0}
+.forms div{background:var(--soft);border-radius:14px;padding:6px 2px}
+.forms b{display:block;font:700 2.6rem var(--arf)}.forms small{font-size:.75rem}
+.row{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:10px}
+.pad{position:relative;width:min(92vw,340px);aspect-ratio:1;margin:0 auto;background:var(--card);border-radius:26px;box-shadow:0 6px 0 rgba(0,0,0,.15);overflow:hidden}
+.ghost{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font:400 15rem var(--arf);color:var(--teal);opacity:.16;pointer-events:none;line-height:1}
+canvas{position:absolute;inset:0;width:100%;height:100%;touch-action:none}
+.jw{background:var(--card);border-radius:22px;padding:12px;margin-bottom:14px;box-shadow:0 6px 0 rgba(0,0,0,.14);display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.jw .e{font-size:3rem}.jw .body{flex:1;min-width:150px;text-align:center}
+.split{font-size:2.4rem;color:var(--coral)}.whole{font-size:3.4rem;color:var(--teal);display:none}
+.jw.on .split{display:none}.jw.on .whole{display:block;animation:pop .4s}
+.chat{display:flex;flex-direction:column;gap:12px}
+.bub{max-width:88%;border-radius:22px;padding:10px 16px;cursor:pointer;border:0;font:inherit;color:#fff;box-shadow:0 5px 0 rgba(0,0,0,.2);text-align:center}
+.bub.A{align-self:flex-start;background:var(--sky)}.bub.B{align-self:flex-end;background:var(--green)}
+.bub .a{font-size:2rem;line-height:1.4;display:block}.bub .m{font-size:.95rem;opacity:.95}
+.q{text-align:center}.q .e{font-size:6rem;line-height:1.2}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}
+.opt{border:0;border-radius:20px;padding:12px;font:700 2.6rem var(--arf);background:var(--card);color:var(--ink);box-shadow:0 6px 0 rgba(0,0,0,.18);cursor:pointer}
+.opt.ok{background:var(--green);color:#fff}.opt.no{background:var(--coral);color:#fff;animation:shake .3s}
+@keyframes shake{25%{transform:translateX(-8px)}75%{transform:translateX(8px)}}
+.bar{height:14px;border-radius:9px;background:var(--soft);overflow:hidden;margin:8px 0}.bar i{display:block;height:100%;background:var(--sun);transition:width .3s}
+.mem{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.mc{aspect-ratio:1;border:0;border-radius:18px;background:var(--violet);color:#fff;font-size:2rem;cursor:pointer;box-shadow:0 5px 0 rgba(0,0,0,.25);display:flex;align-items:center;justify-content:center;font-family:var(--arf);line-height:1.1;padding:2px}
+.mc.up{background:var(--card);color:var(--ink)}.mc.done{background:var(--green);color:#fff}
+.fx{position:fixed;top:-40px;font-size:2rem;z-index:30;pointer-events:none;animation:fall 1.6s ease-in forwards}
+@keyframes fall{to{transform:translateY(110vh) rotate(360deg)}}
+.scene{position:relative;height:230px;perspective:700px;border-radius:22px;overflow:hidden;touch-action:pan-y;background:linear-gradient(#bfe6ff 62%,#8fd18a 62%);margin-bottom:6px}
+.s-vh{background:linear-gradient(#bfe6ff 55%,#6b7480 55%)}.s-fm{background:linear-gradient(#ffe6bf 62%,#f2c27a 62%)}
+.mv{position:absolute;left:50%;top:38%;width:0;height:0;transform-style:preserve-3d}
+.rot{position:absolute;width:130px;height:130px;left:-65px;top:-65px;transform-style:preserve-3d;animation:spin 5s linear infinite}
+.ly{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:6.5rem;line-height:1;backface-visibility:visible}
+.sh{position:absolute;left:50%;bottom:26px;width:100px;height:16px;margin-left:-50px;border-radius:50%;background:rgba(0,0,0,.25)}
+.s-an .mv{animation:hop 1.1s ease-in-out infinite}.s-an .sh{animation:shd 1.1s ease-in-out infinite}
+.s-bd .mv{animation:fly 3.2s ease-in-out infinite}.s-bd .rot{animation:sway 2.4s ease-in-out infinite alternate}
+.s-vh .mv{animation:drive 3.5s ease-in-out infinite alternate}.s-vh .rot{animation:sway 3s ease-in-out infinite alternate}
+@keyframes spin{to{transform:rotateY(360deg)}}
+@keyframes sway{from{transform:rotateY(-40deg)}to{transform:rotateY(40deg)}}
+@keyframes hop{0%,100%{transform:translateY(40px)}45%{transform:translateY(-20px)}}
+@keyframes shd{0%,100%{transform:scale(1)}45%{transform:scale(.6);opacity:.5}}
+@keyframes fly{0%{transform:translate3d(-90px,30px,-60px)}25%{transform:translate3d(0,-25px,40px)}50%{transform:translate3d(90px,20px,-60px)}75%{transform:translate3d(0,-25px,40px)}100%{transform:translate3d(-90px,30px,-60px)}}
+@keyframes drive{from{transform:translate3d(-100px,45px,-80px)}to{transform:translate3d(100px,45px,60px)}}
+.idle-an{animation:hop2 1.4s ease-in-out infinite}.idle-bd{animation:flt 2.4s ease-in-out infinite}.idle-vh{animation:drv 1.6s ease-in-out infinite alternate}.idle-fm{animation:flt 3s ease-in-out infinite}
+@keyframes hop2{0%,100%{transform:translateY(0)}45%{transform:translateY(-10px) rotate(-6deg)}}
+@keyframes flt{50%{transform:translateY(-8px) rotate(6deg)}}
+@keyframes drv{from{transform:translateX(-8px)}to{transform:translateX(8px)}}
+.toast{display:none;position:fixed;left:12px;right:12px;bottom:calc(14px + env(safe-area-inset-bottom,0px));background:#12353a;color:#fff;border-radius:16px;padding:12px 16px;z-index:40;text-align:center;box-shadow:0 6px 0 rgba(0,0,0,.3)}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style></head><body>
+<header><button class="btn c" id="back" onclick="home()" style="display:none" aria-label="തിരികെ">⬅</button>
+<h1><span class="ar" style="font-size:1.5rem">بهجة العربية</span><small>ബഹജത്തുൽ അറബിയ</small></h1><span class="stars" id="st">⭐ 0</span></header>
+<main id="app"></main><div id="modal"></div>
+<script>
+const $=s=>document.querySelector(s),app=$('#app');let S=0,AC;
+const sp=r=>r.split(';').map(x=>x.split('|'));
+const L=sp(`ا|ألف|അലിഫ്|أرنب|🐰|മുയൽ|arnab;ب|باء|ബാഅ്|بطة|🦆|താറാവ്|batta;ت|تاء|താഅ്|تفاح|🍎|ആപ്പിൾ|tuffaah;ث|ثاء|ഥാഅ്|ثعلب|🦊|കുറുക്കൻ|thaʻlab;ج|جيم|ജീം|جمل|🐪|ഒട്ടകം|jamal;ح|حاء|ഹാഅ്|حصان|🐴|കുതിര|hisaan;خ|خاء|ഖാഅ്|خروف|🐑|ആട്|kharoof;د|دال|ദാൽ|دجاجة|🐔|കോഴി|dajaaja;ذ|ذال|ധാൽ|ذرة|🌽|ചോളം|dhura;ر|راء|റാഅ്|ريشة|🪶|തൂവൽ|reesha;ز|زاي|സായ്|زرافة|🦒|ജിറാഫ്|zaraafa;س|سين|സീൻ|سمكة|🐟|മീൻ|samaka;ش|شين|ശീൻ|شمس|☀️|സൂര്യൻ|shams;ص|صاد|സ്വാദ്|صقر|🦅|പരുന്ത്|saqr;ض|ضاد|ള്വാദ്|ضفدع|🐸|തവള|difdaʻ;ط|طاء|ത്വാഅ്|طائرة|✈️|വിമാനം|taaʼira;ظ|ظاء|ള്വാഅ്|ظرف|✉️|കവർ|zarf;ع|عين|ഐൻ|عنب|🍇|മുന്തിരി|ʻinab;غ|غين|ഗൈൻ|غراب|🐦|കാക്ക|ghuraab;ف|فاء|ഫാഅ്|فيل|🐘|ആന|feel;ق|قاف|ഖാഫ്|قمر|🌙|ചന്ദ്രൻ|qamar;ك|كاف|കാഫ്|كتاب|📖|പുസ്തകം|kitaab;ل|لام|ലാം|ليمون|🍋|നാരങ്ങ|laymoon;م|ميم|മീം|موز|🍌|വാഴപ്പഴം|mawz;ن|نون|നൂൻ|نحلة|🐝|തേനീച്ച|nahla;ه|هاء|ഹാഅ്|هدية|🎁|സമ്മാനം|hadiyya;و|واو|വാവ്|وردة|🌹|റോസ|warda;ي|ياء|യാഅ്|يد|✋|കൈ|yad`);
+const WC={'മൃഗങ്ങൾ 🐾':'قطة|🐱|പൂച്ച|qitta;كلب|🐶|നായ|kalb;بقرة|🐄|പശു|baqara;حصان|🐴|കുതിര|hisaan;فيل|🐘|ആന|feel;أسد|🦁|സിംഹം|asad;قرد|🐵|കുരങ്ങൻ|qird;جمل|🐪|ഒട്ടകം|jamal',
+'പക്ഷികൾ 🐦':'دجاجة|🐔|കോഴി|dajaaja;بطة|🦆|താറാവ്|batta;حمامة|🕊️|പ്രാവ്|hamaama;ببغاء|🦜|തത്ത|babghaaʼ;طاووس|🦚|മയിൽ|taawoos;بومة|🦉|മൂങ്ങ|booma;نسر|🦅|കഴുകൻ|nasr',
+'വാഹനങ്ങൾ 🚗':'سيارة|🚗|കാർ|sayyaara;حافلة|🚌|ബസ്|haafila;قطار|🚆|ട്രെയിൻ|qitaar;طائرة|✈️|വിമാനം|taaʼira;سفينة|🚢|കപ്പൽ|safeena;دراجة|🚲|സൈക്കിൾ|darraaja;شاحنة|🚚|ലോറി|shaahina',
+'കുടുംബം 👨‍👩‍👧':'أب|👨|ഉപ്പ|ab;أم|👩|ഉമ്മ|umm;أخ|👦|സഹോദരൻ|akh;أخت|👧|സഹോദരി|ukht;جد|👴|വല്ലിപ്പ|jadd;جدة|👵|വല്ലിമ്മ|jadda;بيت|🏠|വീട്|bayt'};
+const W={};for(const k in WC)W[k]=sp(WC[k]);const ALL=Object.values(W).flat();
+const J=sp('بيت|🏠|വീട്;باب|🚪|വാതിൽ;قلم|✏️|പേന;كتاب|📖|പുസ്തകം;شمس|☀️|സൂര്യൻ;قمر|🌙|ചന്ദ്രൻ;ولد|👦|ആൺകുട്ടി;بنت|👧|പെൺകുട്ടി;سمك|🐟|മീൻ;مدرسة|🏫|സ്കൂൾ');
+const D={'സലാം പറയാം 👋':[['السلام عليكم','നിങ്ങൾക്ക് സമാധാനം'],['وعليكم السلام','നിങ്ങൾക്കും സമാധാനം'],['كيف حالك؟','സുഖമാണോ?'],['أنا بخير، شكرًا','എനിക്ക് സുഖം, നന്ദി']],
+'പേര് ചോദിക്കാം 😊':[['ما اسمك؟','നിന്റെ പേരെന്താണ്?'],['اسمي سلمى','എന്റെ പേര് സൽമ'],['كم عمرك؟','നിനക്ക് എത്ര വയസ്സായി?'],['عمري سبع سنوات','എനിക്ക് ഏഴ് വയസ്സ്']],
+'സ്കൂളിൽ 🏫':[['أين المدرسة؟','സ്കൂൾ എവിടെയാണ്?'],['هذه مدرستي','ഇതാണ് എന്റെ സ്കൂൾ'],['ما هذا؟','ഇത് എന്താണ്?'],['هذا كتاب','ഇത് ഒരു പുസ്തകമാണ്']]};
+const COL=['#0e8f86','#ff6a55','#7a5cff','#2c9cff','#2fae62','#f29b00'],col=i=>COL[i%6];
+const sh=a=>[...a].sort(()=>Math.random()-.5);
+let VO=null,TT,warned=0;
+function pickV(){try{const v=speechSynthesis.getVoices();VO=v.find(x=>/^ar([-_]|$)/i.test(x.lang))||v.find(x=>/arab/i.test(x.name))||null;return v.length}catch(e){return 0}}
+try{speechSynthesis.onvoiceschanged=pickV;pickV();setTimeout(pickV,500);setTimeout(pickV,1500)}catch(e){}
+document.addEventListener('pointerdown',()=>{try{const u=new SpeechSynthesisUtterance(' ');u.volume=0;speechSynthesis.speak(u)}catch(e){}},{once:true});
+function toast(m){let t=$('#toast');if(!t){t=document.createElement('div');t.id='toast';t.className='toast';document.body.appendChild(t)}t.textContent=m;t.style.display='block';clearTimeout(TT);TT=setTimeout(()=>t.style.display='none',6000)}
+function say(t){try{const s=speechSynthesis,n=pickV();if(!s){return toast('ഈ ബ്രൗസറിൽ ശബ്ദം പിന്തുണയ്ക്കുന്നില്ല. Chrome ഉപയോഗിക്കൂ.')}
+if(n&&!VO&&!warned){warned=1;toast('അറബി ശബ്ദം ഇല്ല: Settings › Text-to-speech › Google › Install voice data › Arabic ഡൗൺലോഡ് ചെയ്യൂ')}
+s.cancel();setTimeout(()=>{const u=new SpeechSynthesisUtterance(t);u.lang=VO?VO.lang:'ar-SA';if(VO)u.voice=VO;u.rate=.7;u.pitch=1.05;try{s.resume()}catch(e){}s.speak(u)},80)}catch(e){}}
+function testV(){say('مرحبا');setTimeout(()=>toast(VO?'ശബ്ദം ലഭ്യമാണ് ✅ '+VO.name:'ശബ്ദം കേൾക്കുന്നില്ലെങ്കിൽ: Settings › Text-to-speech › Google › Arabic voice ഡൗൺലോഡ് ചെയ്യൂ'),700)}
+const KT=['an','bd','vh','fm'];
+function tone(f,d=.15,t=0){try{AC=AC||new(window.AudioContext||window.webkitAudioContext)();const o=AC.createOscillator(),g=AC.createGain();o.frequency.value=f;o.type='triangle';g.gain.value=.15;o.connect(g);g.connect(AC.destination);o.start(AC.currentTime+t);o.stop(AC.currentTime+t+d)}catch(e){}}
+const good=()=>{tone(660);tone(880,.2,.12);S++;$('#st').textContent='⭐ '+S},bad=()=>tone(180,.3);
+function fx(){for(let i=0;i<14;i++){const s=document.createElement('span');s.className='fx';s.textContent=['⭐','🎉','✨','🌟'][i%4];s.style.left=Math.random()*95+'vw';s.style.animationDelay=Math.random()*.5+'s';document.body.appendChild(s);setTimeout(()=>s.remove(),2400)}}
+function set(h,back=true){app.innerHTML=h;$('#back').style.display=back?'':'none';window.scrollTo(0,0)}
+function home(){closeM();set(`<div class="hero"><div class="big ar">ب ت ث</div><p>വരൂ, അറബി പഠിക്കാം! 🌙</p><button class="btn s" onclick="testV()">🔊 ശബ്ദം പരിശോധിക്കാം</button></div><div class="menu">
+${[['🔤','അക്ഷരങ്ങൾ','ഉച്ചാരണം പഠിക്കാം','letters'],['✍️','എഴുതാം','വിരൽ കൊണ്ട് എഴുതാം','write'],['🔗','കൂട്ടക്ഷരം','ചേർത്ത് വായിക്കാം','join'],['🐘','പദങ്ങൾ','മൃഗം · പക്ഷി · വാഹനം · കുടുംബം','words'],['💬','സംഭാഷണം','ലളിതമായ സംസാരം','talk'],['🎮','കളികൾ','കളിച്ച് പഠിക്കാം','games']].map((m,i)=>`<button class="tile" style="--c:${col(i)}" onclick="go('${m[3]}')"><i>${m[0]}</i><b>${m[1]}</b><span>${m[2]}</span></button>`).join('')}</div>`,false)}
+function go(v,a){closeM();({letters,write,join,words,talk,games,quiz1,quiz2,memory})[v](a)}
+function closeM(){$('#modal').innerHTML=''}
+function letters(){set(`<h2>അക്ഷരങ്ങൾ</h2><p>ഒരു അക്ഷരം തൊടൂ 👇</p><div class="grid">${L.map((l,i)=>`<button class="lt" style="--c:${col(i)}" onclick="showL(${i})">${l[0]}</button>`).join('')}</div>`)}
+function showL(i){const l=L[i],c=l[0],F=[['ഒറ്റയ്ക്ക്',c],['തുടക്കം',c+'\u200D'],['നടുവിൽ','\u200D'+c+'\u200D'],['ഒടുവിൽ','\u200D'+c]];say(l[1]);
+$('#modal').innerHTML=`<div class="modal" onclick="if(event.target===this)closeM()"><div class="panel" style="--c:${col(i)}"><div class="huge ar">${c}</div><h2 class="ar" style="margin:0">${l[1]}</h2><div>${l[2]}</div>
+<div class="forms ar">${F.map(f=>`<div><b>${f[1]}</b><small style="font-family:inherit;direction:ltr;display:block">${f[0]}</small></div>`).join('')}</div>
+<button class="card" style="width:100%" onclick="say('${l[3]}')"><span class="e">${l[4]}</span> <span class="a ar">${l[3]}</span><div class="m">${l[5]} · ${l[6]}</div></button>
+<div class="row"><button class="btn s" onclick="say('${l[1]}')">🔊 അക്ഷരം</button><button class="btn v" onclick="say('${l[3]}')">🔊 പദം</button><button class="btn g" onclick="go('write',${i})">✍️ എഴുതാം</button><button class="btn c" onclick="closeM()">✖</button></div></div></div>`}
+function write(i=0){const l=L[i];set(`<h2>എഴുതാം ✍️</h2><div class="pad"><div class="ghost ar">${l[0]}</div><canvas id="cv" width="340" height="340"></canvas></div>
+<div class="row"><button class="btn c" onclick="write(${(i+27)%28})">⬅</button><button class="btn v" onclick="say('${l[1]}')">🔊 ${l[1]}</button><button class="btn s" onclick="write(${i})">🧽 മായ്ക്കുക</button><button class="btn g" onclick="good();fx();write(${(i+1)%28})">✔ ശരി</button><button class="btn c" onclick="write(${(i+1)%28})">➡</button></div><p style="text-align:center">മങ്ങിയ അക്ഷരത്തിന് മുകളിലൂടെ വിരൽ ഓടിക്കൂ</p>`);
+const c=$('#cv'),x=c.getContext('2d');x.lineWidth=15;x.lineCap=x.lineJoin='round';x.strokeStyle='#ff6a55';let d=0;
+const p=e=>{const r=c.getBoundingClientRect();return[(e.clientX-r.left)*c.width/r.width,(e.clientY-r.top)*c.height/r.height]};
+c.onpointerdown=e=>{d=1;c.setPointerCapture(e.pointerId);const q=p(e);x.beginPath();x.moveTo(...q);x.lineTo(q[0]+.1,q[1]);x.stroke()};
+c.onpointermove=e=>{if(d){x.lineTo(...p(e));x.stroke()}};c.onpointerup=c.onpointercancel=()=>d=0}
+function join(){set(`<h2>കൂട്ടക്ഷരം 🔗</h2><p>അക്ഷരങ്ങൾ ചേർത്ത് വായിക്കാം</p>${J.map((j,i)=>`<div class="jw" id="j${i}"><span class="e">${j[1]}</span><div class="body"><div class="split ar">${[...j[0]].join(' + ')}</div><div class="whole ar">${j[0]}</div><b>${j[2]}</b></div><div class="row" style="margin:0"><button class="btn c" onclick="$('#j${i}').classList.toggle('on');say('${j[0]}')">🔗 ചേർക്കുക</button><button class="btn s" onclick="say('${j[0]}')">🔊</button></div></div>`).join('')}`)}
+function words(k=Object.keys(W)[0]){set(`<h2>പദങ്ങൾ</h2><div class="tabs">${Object.keys(W).map(n=>`<button class="tab ${n==k?'on':''}" onclick="words('${n}')">${n}</button>`).join('')}</div><div class="cards">${W[k].map((w,i)=>`<button class="card" onclick="v3('${k}',${i})"><div class="e idle-${KT[Object.keys(W).indexOf(k)]}">${w[1]}</div><div class="t">3D 👆</div><div class="a ar">${w[0]}</div><div class="m">${w[2]}</div><div class="t">${w[3]}</div></button>`).join('')}</div>`)}
+function v3(k,i){const w=W[k][i],t=KT[Object.keys(W).indexOf(k)];say(w[0]);let ly='';for(let z=0;z<9;z++)ly+=`<span class="ly" style="transform:translateZ(${(z-4)*5}px);filter:brightness(${z==4?1:.5})">${w[1]}</span>`;
+$('#modal').innerHTML=`<div class="modal" onclick="if(event.target===this)closeM()"><div class="panel"><div class="scene s-${t}" id="sc"><div class="mv"><div class="rot" id="rot">${ly}</div></div><div class="sh"></div></div><p style="margin:4px">വിരൽ കൊണ്ട് തിരിക്കാം 👆</p><div class="a ar" style="font-size:3.2rem;color:var(--teal);line-height:1.3">${w[0]}</div><b>${w[2]}</b> · ${w[3]}<div class="row"><button class="btn v" onclick="say('${w[0]}')">🔊</button><button class="btn s" onclick="v3('${k}',${(i+1)%W[k].length})">അടുത്തത് ➡</button><button class="btn c" onclick="closeM()">✖</button></div></div></div>`;
+const sc=$('#sc'),r=$('#rot');let x0=null,ry=0;sc.onpointerdown=e=>{x0=e.clientX;sc.setPointerCapture(e.pointerId);r.style.animation='none'};sc.onpointermove=e=>{if(x0!==null){ry+=(e.clientX-x0)*1.2;x0=e.clientX;r.style.transform=`rotateY(${ry}deg)`}};sc.onpointerup=sc.onpointercancel=()=>x0=null}
+function talk(k=Object.keys(D)[0]){set(`<h2>സംഭാഷണം 💬</h2><div class="tabs">${Object.keys(D).map(n=>`<button class="tab ${n==k?'on':''}" onclick="talk('${n}')">${n}</button>`).join('')}</div><div class="chat">${D[k].map((s,i)=>`<button class="bub ${i%2?'B':'A'}" onclick="say('${s[0]}')"><span class="a ar">${s[0]}</span><span class="m">${s[1]}</span></button>`).join('')}</div><p style="text-align:center">ഓരോ വരിയും തൊട്ട് കേൾക്കൂ 🔊</p>`)}
+function games(){set(`<h2>കളികൾ 🎮</h2><div class="menu">${[['🖼️','ചിത്രം കണ്ടെത്തൂ','ശരിയായ അറബി പദം','quiz1'],['🔠','ആദ്യ അക്ഷരം','ഏത് അക്ഷരത്തിൽ തുടങ്ങും?','quiz2'],['🃏','ജോഡി കണ്ടെത്തൂ','ചിത്രവും പദവും','memory']].map((m,i)=>`<button class="tile" style="--c:${col(i+1)}" onclick="go('${m[3]}')"><i>${m[0]}</i><b>${m[1]}</b><span>${m[2]}</span></button>`).join('')}</div>`)}
+let G;
+function quiz(kind,n=0,sc=0){if(n>=10){const st=sc>=9?3:sc>=6?2:1;fx();return set(`<div class="q"><div class="e">${'⭐'.repeat(st)}</div><h2>${sc} / 10 ശരി!</h2><p>${st==3?'അടിപൊളി! 🎉':'നന്നായി, ഒന്നുകൂടി കളിക്കാം 💪'}</p><div class="row"><button class="btn g" onclick="go('${kind}')">🔁 വീണ്ടും</button><button class="btn c" onclick="games()">🎮 കളികൾ</button></div></div>`)}
+let q,opts,ans,top;
+if(kind=='quiz1'){q=ALL[Math.random()*ALL.length|0];ans=q[0];opts=sh([ans,...sh(ALL.filter(w=>w[0]!=ans)).slice(0,3).map(w=>w[0])]);top=`<div class="e">${q[1]}</div><b>${q[2]}</b><p>ഇതിന്റെ അറബി പദം ഏത്?</p>`}
+else{q=L[Math.random()*28|0];ans=q[3][0];opts=sh([ans,...sh(L.map(l=>l[0]).filter(c=>c!=ans)).slice(0,3)]);top=`<div class="e">${q[4]}</div><b>${q[5]}</b><p>ഇതിന്റെ അറബി പദം ഏത് അക്ഷരത്തിൽ തുടങ്ങുന്നു?</p>`}
+G={sc};set(`<div class="bar"><i style="width:${n*10}%"></i></div><div class="q">${top}<div class="opts ar">${opts.map(o=>`<button class="opt" onclick="pick(this,'${o}','${ans}','${kind}',${n},${sc})">${o}</button>`).join('')}</div></div>`);}
+function pick(b,o,a,k,n,sc){const ok=o==a;b.classList.add(ok?'ok':'no');if(ok){good();say(o)}else{bad();[...document.querySelectorAll('.opt')].find(x=>x.textContent==a).classList.add('ok')}
+document.querySelectorAll('.opt').forEach(x=>x.onclick=null);setTimeout(()=>quiz(k,n+1,sc+(ok?1:0)),1000)}
+function quiz1(){quiz('quiz1')}function quiz2(){quiz('quiz2')}
+function memory(){const p=sh(ALL).slice(0,6);const cs=sh(p.flatMap((w,i)=>[{i,t:w[1],a:0},{i,t:w[0],a:1}]));let first=null,lock=0,done=0;
+set(`<h2>ജോഡി കണ്ടെത്തൂ 🃏</h2><p>ചിത്രവും അതിന്റെ അറബി പദവും ചേർത്തു വയ്ക്കൂ</p><div class="mem">${cs.map((c,k)=>`<button class="mc" data-k="${k}">❓</button>`).join('')}</div>`);
+document.querySelectorAll('.mc').forEach(b=>b.onclick=()=>{const c=cs[b.dataset.k];if(lock||b.classList.contains('up')||b.classList.contains('done'))return;b.classList.add('up');b.textContent=c.t;if(c.a)say(c.t);
+if(!first){first=b;return}const f=cs[first.dataset.k];
+if(f.i==c.i){good();[first,b].forEach(x=>{x.classList.remove('up');x.classList.add('done')});first=null;if(++done==6){fx();setTimeout(games,1800)}}
+else{bad();lock=1;const a=first;first=null;setTimeout(()=>{[a,b].forEach(x=>{x.classList.remove('up');x.textContent='❓'});lock=0},800)}})}
+home();
+</script></body></html>
